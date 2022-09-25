@@ -1,0 +1,25 @@
+.navbar[b-m5o957iscs] {
+  width: 100%;
+  white-space: nowrap;
+  height: 60px;
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer[b-m5o957iscs] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  height: 60px;
+  display: flex;
+  border-top: 1px solid #e5e5e5;
+  justify-content: center;
+  align-items: center;
+}
+
+.maincontent[b-m5o957iscs] {
+  height: 83vh;
+}

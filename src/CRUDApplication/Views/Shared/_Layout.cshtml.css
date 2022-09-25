@@ -1,0 +1,25 @@
+﻿.navbar {
+  width: 100%;
+  white-space: nowrap;
+  height: 60px;
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  height: 60px;
+  display: flex;
+  border-top: 1px solid #e5e5e5;
+  justify-content: center;
+  align-items: center;
+}
+
+.maincontent {
+  height: 83vh;
+}
