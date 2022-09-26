@@ -2,32 +2,133 @@
 .homepage-maincontainer[b-48lzvmx1ym] {
   display: flex;
   height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-/* _content/CRUDApplication/Views/Shared/_Layout.cshtml.rz.scp.css */
-.navbar[b-m5o957iscs] {
-  width: 100%;
-  white-space: nowrap;
-  height: 60px;
-  display: flex;
-  border-bottom: 1px solid #e5e5e5;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.homepage-createcontainer[b-48lzvmx1ym] {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  font-size: 20px;
+  color: #bc8400;
+  align-items: center
+}
+
+  .homepage-createcontainer a[b-48lzvmx1ym] {
+    background-color: #bc8400;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+    .homepage-createcontainer a:hover[b-48lzvmx1ym] {
+      cursor: pointer;
+    }
+
+.homepage-container[b-48lzvmx1ym] {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.homepage-notext[b-48lzvmx1ym] {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #6c8b92;
+}
+
+.homepage-maincontainer h1[b-48lzvmx1ym] {
+  font-weight: 500;
+}
+
+p[b-48lzvmx1ym] {
+  margin: 0;
+}
+
+.homepage-customercard[b-48lzvmx1ym] {
+  margin: 10px;
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  background-color: #0a323f;
+  color: #6c8b92;
+}
+
+  .homepage-customercard img[b-48lzvmx1ym] {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+  }
+
+  .homepage-customercard a[b-48lzvmx1ym] {
+    width: 75px;
+    margin: 0px 3px;
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+    .homepage-customercard a:hover[b-48lzvmx1ym] {
+      cursor: pointer;
+    }
+
+.homepage-editbutton[b-48lzvmx1ym] {
+  border: 2px solid #bc8400;
+}
+
+.homepage-deletebutton[b-48lzvmx1ym] {
+  border: 2px solid #f56d6d;
+}
+/* _content/CRUDApplication/Views/Shared/_Layout.cshtml.rz.scp.css */
+.navbar[b-m5o957iscs] {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #023244;
+  color: #6c8b92;
+}
+
+.navbar-container[b-m5o957iscs] {
+  width: 90%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .footer[b-m5o957iscs] {
+  color: #6c8b92;
+  background-color: #023244;
   position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   height: 60px;
   display: flex;
-  border-top: 1px solid #e5e5e5;
   justify-content: center;
   align-items: center;
 }
 
 .maincontent[b-m5o957iscs] {
-  height: 83vh;
+  height: 85vh;
 }

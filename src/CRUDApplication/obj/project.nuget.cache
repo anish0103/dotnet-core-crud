@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3IIP3aIBW0TvMLg1rRhxNN1TLjIkK9lVfWOyHAeutoVrz6YoJL6JnERtCRlbZZZyCl+X1DzpOK+LJK+ku5NELw==",
+  "dgSpecHash": "vXOiof4SFpprlsi5rjSCGqyTgOzvUyw4YYu/Hr4MyZPKfftuZ4TRxLNTWE5E+iWg+Dc4KBXVpvtaCyqkarirow==",
   "success": true,
-  "projectFilePath": "E:\\Study\\Projects\\ASP.NET CRUD\\CRUDApplication\\CRUDApplication\\CRUDApplication.csproj",
+  "projectFilePath": "E:\\Study\\Projects\\ASP.NET CRUD\\src\\CRUDApplication\\CRUDApplication.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

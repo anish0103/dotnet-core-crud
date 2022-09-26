@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Study\\Projects\\ASP.NET CRUD\\CRUDApplication\\CRUDApplication\\CRUDApplication.csproj",
+      "projectUniqueName": "E:\\Study\\Projects\\ASP.NET CRUD\\src\\CRUDApplication\\CRUDApplication.csproj",
       "projectName": "CRUDApplication",
-      "projectPath": "E:\\Study\\Projects\\ASP.NET CRUD\\CRUDApplication\\CRUDApplication\\CRUDApplication.csproj",
+      "projectPath": "E:\\Study\\Projects\\ASP.NET CRUD\\src\\CRUDApplication\\CRUDApplication.csproj",
       "packagesPath": "C:\\Users\\anish\\.nuget\\packages\\",
-      "outputPath": "E:\\Study\\Projects\\ASP.NET CRUD\\CRUDApplication\\CRUDApplication\\obj\\",
+      "outputPath": "E:\\Study\\Projects\\ASP.NET CRUD\\src\\CRUDApplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\anish\\AppData\\Roaming\\NuGet\\NuGet.Config",

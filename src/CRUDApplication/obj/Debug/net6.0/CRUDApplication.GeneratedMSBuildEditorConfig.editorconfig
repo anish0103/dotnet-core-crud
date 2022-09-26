@@ -8,33 +8,29 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CRUDApplication
 build_property.RootNamespace = CRUDApplication
-build_property.ProjectDir = E:\Study\Projects\ASP.NET CRUD\CRUDApplication\CRUDApplication\
+build_property.ProjectDir = E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Study\Projects\ASP.NET CRUD\CRUDApplication\CRUDApplication
+build_property.MSBuildProjectDirectory = E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/Study/Projects/ASP.NET CRUD/CRUDApplication/CRUDApplication/Views/Shared/Error.cshtml]
+[E:/Study/Projects/ASP.NET CRUD/src/CRUDApplication/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Study/Projects/ASP.NET CRUD/CRUDApplication/CRUDApplication/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/Study/Projects/ASP.NET CRUD/CRUDApplication/CRUDApplication/Views/_ViewImports.cshtml]
+[E:/Study/Projects/ASP.NET CRUD/src/CRUDApplication/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Study/Projects/ASP.NET CRUD/CRUDApplication/CRUDApplication/Views/_ViewStart.cshtml]
+[E:/Study/Projects/ASP.NET CRUD/src/CRUDApplication/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Study/Projects/ASP.NET CRUD/CRUDApplication/CRUDApplication/Views/Home/Index.cshtml]
+[E:/Study/Projects/ASP.NET CRUD/src/CRUDApplication/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-48lzvmx1ym
 
-[E:/Study/Projects/ASP.NET CRUD/CRUDApplication/CRUDApplication/Views/Shared/_Layout.cshtml]
+[E:/Study/Projects/ASP.NET CRUD/src/CRUDApplication/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-m5o957iscs
