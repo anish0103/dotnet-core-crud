@@ -13,17 +13,39 @@ namespace CRUDApplication.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             CustomerList = new List<Customer>();
-            //{
-            //    new Customer() { Id = 1, Email = "xyz@gmail.com", Name = "XYZ1 Name" },
-            //    new Customer() { Id = 2, Email = "xyz2@gmail.com", Name = "XYZ2 Name" },
-            //    new Customer() { Id = 3, Email = "xyz3@gmail.com", Name = "XYZ3 Name" }
-            //};
+            CustomerList.Add(new Customer { Name= "Anish", Id = 1, Email = "anish@gmail.com" }) ;
             _logger = logger;
         }
 
         public IActionResult Index()
         {
             return View(CustomerList);
+        }
+
+        public IActionResult Edit(int? id)
+        {
+            var model = CustomerList.Find(x => x.Id == id);
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Customer customerobj)
+        {
+            CustomerList.Add(customerobj);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Customer customerobj)
+        {
+            customerobj.Id = CustomerList.Count + 1;
+            CustomerList.Add(customerobj);
+            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

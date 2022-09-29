@@ -7,7 +7,7 @@
 <div class="homepage-maincontainer">
     <div class="homepage-createcontainer">
         Customer List
-        <a href="#">Create Customer</a>
+        <a class="homepage-createbutton" href="home/create">Create Customer</a>
     </div>
     <div class="homepage-container">
         @*<h1>HELLO FROM ASP.NET CORE</h1>*@
@@ -25,7 +25,7 @@
                 <p>@customer.Name</p>
                 <p>@customer.Email</p>
                 <div>
-                    <a href="#" class="homepage-editbutton">Edit</a>
+                    <a href="/home/edit/@customer.Id" class="homepage-editbutton">Edit</a>
                     <a href="#" class="homepage-deletebutton">Delete</a>
                 </div>
             </div>

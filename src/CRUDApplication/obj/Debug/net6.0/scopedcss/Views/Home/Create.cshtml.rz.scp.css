@@ -1,0 +1,39 @@
+.createpage-maincontainer[b-bbcn6gr3jm] {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.createpage-container[b-bbcn6gr3jm] {
+  width: 90%;
+  height: 100%;
+}
+.createpage-namecontainer[b-bbcn6gr3jm] {
+  height: 80px;
+  font-size: 20px;
+  color: #bc8400;
+  display: flex;
+  align-items: center;
+}
+.createpage-container button[b-bbcn6gr3jm] {
+  background-color: #bc8400;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+  .createpage-container button:hover[b-bbcn6gr3jm] {
+    cursor: pointer;
+  }
+  .createpage-container a[b-bbcn6gr3jm] {
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 9px 20px;
+    color: white;
+    background-color: #6c8b92;
+  }

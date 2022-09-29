@@ -3,31 +3,25 @@
     font-size: 16px;
   }
 }
-
 html {
   font-size: 14px;
   position: relative;
   min-height: 100%;
 }
-
 body {
   background-color: #002638;
 }
-
 *, body {
   margin: 0px;
   padding: 0px;
   font-family: 'Montserrat', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
-
 ::-webkit-scrollbar {
   width: 4px;
 }
-
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: #0a323f;
   border-radius: 20px;

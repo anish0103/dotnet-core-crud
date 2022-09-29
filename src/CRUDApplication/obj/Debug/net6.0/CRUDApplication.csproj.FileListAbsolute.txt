@@ -52,3 +52,5 @@ E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\refint\CRUDA
 E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\CRUDApplication.pdb
 E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\CRUDApplication.genruntimeconfig.cache
 E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\ref\CRUDApplication.dll
+E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\scopedcss\Views\Home\Create.cshtml.rz.scp.css
+E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\scopedcss\Views\Home\Edit.cshtml.rz.scp.css

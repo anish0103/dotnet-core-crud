@@ -7,13 +7,11 @@
   background-color: #023244;
   color: #6c8b92;
 }
-
 .navbar-container {
   width: 90%;
   font-size: 18px;
   font-weight: 500;
 }
-
 .footer {
   color: #6c8b92;
   background-color: #023244;
@@ -26,7 +24,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .maincontent {
   height: 85vh;
 }
