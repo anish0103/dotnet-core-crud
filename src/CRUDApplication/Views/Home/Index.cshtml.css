@@ -82,3 +82,8 @@
 .homepage-deletebutton {
   border: 2px solid #f56d6d;
 }
+.homepage-customercard p {
+  width: 80%;
+  text-align: center;
+  word-wrap: break-word;
+}

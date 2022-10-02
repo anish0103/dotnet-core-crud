@@ -163,6 +163,11 @@
 .homepage-deletebutton[b-48lzvmx1ym] {
   border: 2px solid #f56d6d;
 }
+.homepage-customercard p[b-48lzvmx1ym] {
+  width: 80%;
+  text-align: center;
+  word-wrap: break-word;
+}
 /* _content/CRUDApplication/Views/Shared/_Layout.cshtml.rz.scp.css */
 .navbar[b-m5o957iscs] {
   width: 100%;

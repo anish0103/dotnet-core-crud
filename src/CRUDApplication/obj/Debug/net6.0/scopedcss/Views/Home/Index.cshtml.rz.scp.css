@@ -82,3 +82,8 @@
 .homepage-deletebutton[b-48lzvmx1ym] {
   border: 2px solid #f56d6d;
 }
+.homepage-customercard p[b-48lzvmx1ym] {
+  width: 80%;
+  text-align: center;
+  word-wrap: break-word;
+}

@@ -1,37 +1,46 @@
 ﻿using CRUDApplication.Models;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
+using MongoDB.Driver;
 using System.Diagnostics;
 
 namespace CRUDApplication.Controllers
 {
     public class HomeController : Controller
     {
+        MongoClient client = new MongoClient("mongodb+srv://Anish_1031:IVudoVcIIOtNgXnw@cluster0.j1elb.mongodb.net/?retryWrites=true&w=majority");
+        
         private readonly ILogger<HomeController> _logger;
 
-        private readonly List<Customer> CustomerList;
+        private List<Customer> CustomerList = new List<Customer>();
 
         public HomeController(ILogger<HomeController> logger)
         {
-            CustomerList = new List<Customer>();
-            CustomerList.Add(new Customer { Name= "Anish", Id = 1, Email = "anish@gmail.com" }) ;
+            
             _logger = logger;
         }
 
         public IActionResult Index()
         {
+            var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
+            CustomerList = customerList.Find(new BsonDocument()).ToList();
             return View(CustomerList);
         }
 
-        public IActionResult Edit(int? id)
+        public IActionResult Edit(string? id)
         {
-            var model = CustomerList.Find(x => x.Id == id);
+            var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
+            CustomerList = customerList.Find(new BsonDocument()).ToList();
+            var model = CustomerList.Find(x => x._id.ToString() == id);
             return View(model);
         }
 
         [HttpPost]
-        public IActionResult Edit(Customer customerobj)
+        public async Task<IActionResult> Edit(Customer customerobj, string? id)
         {
-            CustomerList.Add(customerobj);
+            var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
+            customerobj._id = ObjectId.Parse(id);
+            await customerList.ReplaceOneAsync(c => c._id == ObjectId.Parse(id), customerobj);
             return RedirectToAction("Index");
         }
 
@@ -43,8 +52,15 @@ namespace CRUDApplication.Controllers
         [HttpPost]
         public IActionResult Create(Customer customerobj)
         {
-            customerobj.Id = CustomerList.Count + 1;
-            CustomerList.Add(customerobj);
+            var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
+            customerList.InsertOne(customerobj);
+            return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> Delete(string? id)
+        {
+            var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
+            await customerList.DeleteOneAsync(c => c._id == ObjectId.Parse(id));
             return RedirectToAction("Index");
         }
 
