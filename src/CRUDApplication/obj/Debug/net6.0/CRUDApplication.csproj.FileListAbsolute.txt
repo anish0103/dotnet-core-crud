@@ -43,7 +43,6 @@ E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\CRUDApplicat
 E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\CRUDApplication.RazorAssemblyInfo.cs
 E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\staticwebassets.build.json
 E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\staticwebassets.development.json
-E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\scopedcss\Views\Home\Index.cshtml.rz.scp.css
 E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\scopedcss\bundle\CRUDApplication.styles.css
 E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\scopedcss\projectbundle\CRUDApplication.bundle.scp.css
@@ -52,8 +51,6 @@ E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\refint\CRUDA
 E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\CRUDApplication.pdb
 E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\CRUDApplication.genruntimeconfig.cache
 E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\ref\CRUDApplication.dll
-E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\scopedcss\Views\Home\Create.cshtml.rz.scp.css
-E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\obj\Debug\net6.0\scopedcss\Views\Home\Edit.cshtml.rz.scp.css
 E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\bin\Debug\net6.0\DnsClient.dll
 E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\bin\Debug\net6.0\MongoDB.Bson.dll
 E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication\bin\Debug\net6.0\MongoDB.Driver.dll

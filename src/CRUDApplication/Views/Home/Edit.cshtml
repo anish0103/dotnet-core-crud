@@ -15,9 +15,51 @@
             <label style="margin: 5px 0; font-size: 15px; color: #6c8b92" asp-for="Email"></label>
             <input style="padding: 8px; font-size: 15px; border: none; outline: none; border-radius: 8px; margin: 5px 0; background-color: #a4bbbf" asp-for="Email" />
             <div>
-            <button type="submit">Edit</button>
-            <a href="/">Back</a>
+                <button type="submit">Edit</button>
+                <a href="/">Back</a>
             </div>
         </form>
     </div>
 </div>
+
+<style>
+    .createpage-namecontainer {
+        height: 80px;
+        font-size: 20px;
+        color: #bc8400;
+        display: flex;
+        align-items: center;
+    }
+    .createpage-maincontainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .createpage-container {
+        width: 90%;
+        height: 100%;
+    }
+        .createpage-container button {
+            background-color: #bc8400;
+            border: none;
+            outline: none;
+            padding: 8px 12px;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+            .createpage-container button:hover {
+                cursor: pointer;
+            }
+        .createpage-container a {
+            border-radius: 8px;
+            text-decoration: none;
+            padding: 9px 20px;
+            color: white;
+            background-color: #6c8b92;
+        }
+</style>

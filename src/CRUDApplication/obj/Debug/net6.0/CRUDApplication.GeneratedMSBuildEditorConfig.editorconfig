@@ -15,6 +15,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\Study\Projects\ASP.NET CRUD\src\CRUDApplication
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/Study/Projects/ASP.NET CRUD/src/CRUDApplication/Views/Home/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Study/Projects/ASP.NET CRUD/src/CRUDApplication/Views/Home/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Study/Projects/ASP.NET CRUD/src/CRUDApplication/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Study/Projects/ASP.NET CRUD/src/CRUDApplication/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,18 +38,6 @@ build_metadata.AdditionalFiles.CssScope =
 [E:/Study/Projects/ASP.NET CRUD/src/CRUDApplication/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-
-[E:/Study/Projects/ASP.NET CRUD/src/CRUDApplication/Views/Home/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-bbcn6gr3jm
-
-[E:/Study/Projects/ASP.NET CRUD/src/CRUDApplication/Views/Home/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = b-l8sew7m75w
-
-[E:/Study/Projects/ASP.NET CRUD/src/CRUDApplication/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = b-48lzvmx1ym
 
 [E:/Study/Projects/ASP.NET CRUD/src/CRUDApplication/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
