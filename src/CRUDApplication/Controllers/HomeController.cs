@@ -9,14 +9,14 @@ namespace CRUDApplication.Controllers
     public class HomeController : Controller
     {
         MongoClient client = new MongoClient("mongodb+srv://Anish_1031:IVudoVcIIOtNgXnw@cluster0.j1elb.mongodb.net/?retryWrites=true&w=majority");
-        
+
         private readonly ILogger<HomeController> _logger;
 
         private List<Customer> CustomerList = new List<Customer>();
 
         public HomeController(ILogger<HomeController> logger)
         {
-            
+
             _logger = logger;
         }
 
@@ -38,10 +38,15 @@ namespace CRUDApplication.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(Customer customerobj, string? id)
         {
-            var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
-            customerobj._id = ObjectId.Parse(id);
-            await customerList.ReplaceOneAsync(c => c._id == ObjectId.Parse(id), customerobj);
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
+                customerobj._id = ObjectId.Parse(id);
+                await customerList.ReplaceOneAsync(c => c._id == ObjectId.Parse(id), customerobj);
+                return RedirectToAction("Index");
+            }
+
+            return View();
         }
 
         public IActionResult Create()
@@ -52,9 +57,14 @@ namespace CRUDApplication.Controllers
         [HttpPost]
         public IActionResult Create(Customer customerobj)
         {
-            var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
-            customerList.InsertOne(customerobj);
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
+                customerList.InsertOne(customerobj);
+                return RedirectToAction("Index");
+            }
+
+            return View();
         }
 
         public async Task<IActionResult> Delete(string? id)

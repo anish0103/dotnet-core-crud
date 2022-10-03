@@ -4,35 +4,6 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="homepage-maincontainer">
-    <div class="homepage-createcontainer">
-        Customer List
-        <a class="homepage-createbutton" href="home/create">Create Customer</a>
-    </div>
-    <div class="homepage-container">
-        @*<h1>HELLO FROM ASP.NET CORE</h1>*@
-        @{
-            if (Model.Count <= 0)
-            {
-                <p class="homepage-notext">No Customer to show. Click on create customer to create one.</p>
-                return;
-            }
-        }
-        @foreach (var customer in Model)
-        {
-            <div class="homepage-customercard">
-                <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="User Picture" />
-                <p>@customer.Name</p>
-                <p>@customer.Email</p>
-                <div>
-                    <a href="/home/edit/@customer._id" class="homepage-editbutton">Edit</a>
-                    <a href="/home/delete/@customer._id" class="homepage-deletebutton">Delete</a>
-                </div>
-            </div>
-        }
-    </div>
-</div>
-
 <style>
     .homepage-maincontainer {
         display: flex;
@@ -125,3 +96,31 @@
     }
 </style>
 
+<div class="homepage-maincontainer">
+    <div class="homepage-createcontainer">
+        Customer List
+        <a class="homepage-createbutton" href="home/create">Create Customer</a>
+    </div>
+    <div class="homepage-container">
+        @*<h1>HELLO FROM ASP.NET CORE</h1>*@
+        @{
+            if (Model.Count <= 0)
+            {
+                <p class="homepage-notext">No Customer to show. Click on create customer to create one.</p>
+                return;
+            }
+        }
+        @foreach (var customer in Model)
+        {
+            <div class="homepage-customercard">
+                <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="User Picture" />
+                <p>@customer.Name</p>
+                <p>@customer.Email</p>
+                <div>
+                    <a href="/home/edit/@customer._id" class="homepage-editbutton">Edit</a>
+                    <a href="/home/delete/@customer._id" class="homepage-deletebutton">Delete</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
