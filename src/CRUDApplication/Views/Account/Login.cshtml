@@ -1,23 +1,23 @@
-﻿@model Customer;
+﻿@model UserSignin
 
 @{
-    ViewData["Title"] = "Edit Page";
+    ViewData["Title"] = "Login Page";
 }
 
 <div class="formpage-maincontainer">
     <div class="formpage-container">
         <div class="formpage-namecontainer">
-            Edit Customer
+            Login User
         </div>
         <form style="display:flex; flex-direction: column; background-color: #0a323f; padding: 10px; border-radius: 8px" method="post">
-            <label style="margin: 5px 0; font-size: 15px; color: #6c8b92" asp-for="Name"></label>
-            <input style="padding: 8px; font-size: 15px; border: none; outline: none; border-radius: 8px; margin: 5px 0; background-color: #a4bbbf" asp-for="Name" />
-            <span style="color: #f56d6d; margin: 3px 3px" asp-validation-for="Name"></span>
             <label style="margin: 5px 0; font-size: 15px; color: #6c8b92" asp-for="Email"></label>
             <input style="padding: 8px; font-size: 15px; border: none; outline: none; border-radius: 8px; margin: 5px 0; background-color: #a4bbbf" asp-for="Email" />
             <span style="color: #f56d6d; margin: 3px 3px" asp-validation-for="Email"></span>
+            <label style="margin: 5px 0; font-size: 15px; color: #6c8b92" asp-for="Password"></label>
+            <input style="padding: 8px; font-size: 15px; border: none; outline: none; border-radius: 8px; margin: 5px 0; background-color: #a4bbbf" asp-for="Password" />
+            <span style="color: #f56d6d; margin: 3px 3px" asp-validation-for="Password"></span>
             <div>
-                <button type="submit">Edit</button>
+                <button type="submit">Login</button>
                 <a href="/">Back</a>
             </div>
         </form>

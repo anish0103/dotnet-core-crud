@@ -9,7 +9,7 @@ namespace CRUDApplication.Controllers
 {
     public class HomeController : Controller
     {
-        MongoClient client = new MongoClient("mongodb+srv://Anish_1031:IVudoVcIIOtNgXnw@cluster0.j1elb.mongodb.net/?retryWrites=true&w=majority");
+        //MongoClient client = new MongoClient("mongodb+srv://Anish_1031:IVudoVcIIOtNgXnw@cluster0.j1elb.mongodb.net/?retryWrites=true&w=majority");
 
         private readonly ILogger<HomeController> _logger;
 
@@ -27,47 +27,47 @@ namespace CRUDApplication.Controllers
         {
             //MongoDB Code
 
-            var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
-            CustomerList = customerList.Find(new BsonDocument()).ToList();
+            //var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
+            //CustomerList = customerList.Find(new BsonDocument()).ToList();
 
             //Entity Framework Code
 
-            //var customerList = _db.CustomerList.ToList();
+            var customerList = _db.CustomerList.ToList();
 
-            return View(CustomerList);
+            return View(customerList);
         }
 
-        public IActionResult Edit(string? id)
+        public IActionResult Edit(int? id)
         {
             //MongoDB Code
 
-            var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
-            CustomerList = customerList.Find(new BsonDocument()).ToList();
-            var model = CustomerList.Find(x => x._id.ToString() == id);
+            //var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
+            //CustomerList = customerList.Find(new BsonDocument()).ToList();
+            //var model = CustomerList.Find(x => x._id.ToString() == id);
 
             //Entity Framework Code
 
-            //var model = _db.CustomerList.Find(id);
+            var model = _db.CustomerList.Find(id);
 
             return View(model);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(Customer customerobj, string? id)
+        public async Task<IActionResult> Edit(Customer customerobj, int id)
         {
             if (ModelState.IsValid)
             {
                 //MongoDB Code
 
-                var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
-                customerobj._id = ObjectId.Parse(id);
-                await customerList.ReplaceOneAsync(c => c._id == ObjectId.Parse(id), customerobj);
+                //var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
+                //customerobj._id = ObjectId.Parse(id);
+                //await customerList.ReplaceOneAsync(c => c._id == ObjectId.Parse(id), customerobj);
 
                 //Entity Framework Code
 
-                //customerobj._id = id;
-                //_db.CustomerList.Update(customerobj);
-                //_db.SaveChanges();
+                customerobj._id = id;
+                _db.CustomerList.Update(customerobj);
+                _db.SaveChanges();
 
                 return RedirectToAction("Index");
             }
@@ -87,13 +87,13 @@ namespace CRUDApplication.Controllers
             {
                 //MongoDB Code
 
-                var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
-                customerList.InsertOne(customerobj);
+                //var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
+                //customerList.InsertOne(customerobj);
 
                 //Entity Framework Code
 
-                //_db.CustomerList.Add(customerobj);
-                //_db.SaveChanges();
+                _db.CustomerList.Add(customerobj);
+                _db.SaveChanges();
 
                 return RedirectToAction("Index");
             }
@@ -101,18 +101,18 @@ namespace CRUDApplication.Controllers
             return View();
         }
 
-        public async Task<IActionResult> Delete(string? id)
+        public async Task<IActionResult> Delete(int? id)
         {
             //MongoDB Code
 
-            var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
-            await customerList.DeleteOneAsync(c => c._id == ObjectId.Parse(id));
+            //var customerList = client.GetDatabase("DotNetCoreCRUD").GetCollection<Customer>("customerList");
+            //await customerList.DeleteOneAsync(c => c._id == ObjectId.Parse(id));
 
             //Entity Framework Code
 
-            //var customerobj = _db.CustomerList.Find(id);
-            //_db.CustomerList.Remove(customerobj);
-            //_db.SaveChanges();
+            var customerobj = _db.CustomerList.Find(id);
+            _db.CustomerList.Remove(customerobj);
+            _db.SaveChanges();
 
             return RedirectToAction("Index");
         }
