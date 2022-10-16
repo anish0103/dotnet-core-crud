@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@inject SignInManager<IdentityUser> signInManager
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -12,8 +14,24 @@
     <div>
         <div class="navbar">
             <div class="navbar-container">
-                CRUD Application
+                <div>
+                    <a href="/">CRUD Application</a>
+                </div>
+                @if (signInManager.IsSignedIn(User))
+                {
+                    <form method="post" asp-action="logout" asp-controller="account">
+                        <button type="submit">Logout @User.Identity.Name</button>
+                    </form>
+                }
+                else
+                {
+                    <div style="width: 11%; display: flex; justify-content: space-between; margin-right: 5px">
+                        <a href="/account/registration">Register</a>
+                        <a href="/account/login">Login</a>
+                    </div>
+                }
             </div>
+
         </div>
         <main class="maincontent" role="main">
             @RenderBody()

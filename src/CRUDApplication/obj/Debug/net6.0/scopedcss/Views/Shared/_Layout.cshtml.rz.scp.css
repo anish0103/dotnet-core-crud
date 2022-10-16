@@ -9,9 +9,29 @@
 }
 .navbar-container[b-m5o957iscs] {
   width: 90%;
+  display: flex;
   font-size: 18px;
   font-weight: 500;
+  justify-content: space-between;
 }
+  .navbar-container a[b-m5o957iscs] {
+    text-decoration: none;
+    color: #6c8b92;
+    transition: 0.4s;
+  }
+  .navbar-container button[b-m5o957iscs] {
+    transition: 0.4s;
+    outline: none;
+    background: transparent;
+    border: none;
+    color: #6c8b92;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .navbar-container a:hover[b-m5o957iscs], .navbar-container button:hover[b-m5o957iscs] {
+    color: #bc8400;
+    cursor: pointer;
+  }
 .footer[b-m5o957iscs] {
   color: #6c8b92;
   background-color: #023244;

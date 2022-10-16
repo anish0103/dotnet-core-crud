@@ -9,9 +9,29 @@
 }
 .navbar-container {
   width: 90%;
+  display: flex;
   font-size: 18px;
   font-weight: 500;
+  justify-content: space-between;
 }
+  .navbar-container a {
+    text-decoration: none;
+    color: #6c8b92;
+    transition: 0.4s;
+  }
+  .navbar-container button {
+    transition: 0.4s;
+    outline: none;
+    background: transparent;
+    border: none;
+    color: #6c8b92;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .navbar-container a:hover, .navbar-container button:hover {
+    color: #bc8400;
+    cursor: pointer;
+  }
 .footer {
   color: #6c8b92;
   background-color: #023244;

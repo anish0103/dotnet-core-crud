@@ -10,6 +10,7 @@
             Register User
         </div>
         <form style="display:flex; flex-direction: column; background-color: #0a323f; padding: 10px; border-radius: 8px" method="post">
+            <div style="color: #f56d6d; margin: 3px 16px" asp-validation-summary="All"></div>
             <label style="margin: 5px 0; font-size: 15px; color: #6c8b92" asp-for="Name"></label>
             <input style="padding: 8px; font-size: 15px; border: none; outline: none; border-radius: 8px; margin: 5px 0; background-color: #a4bbbf" asp-for="Name" />
             <span style="color: #f56d6d; margin: 3px 3px" asp-validation-for="Name"></span>
